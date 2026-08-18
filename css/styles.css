@@ -140,6 +140,28 @@ a:hover {
   margin-inline: auto;
 }
 
+/* Top Legal Banner */
+.legal-top-banner {
+  background: linear-gradient(90deg, #58144b 0%, #881c6a 100%);
+  color: #fff;
+  font-size: 0.82rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.legal-top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.legal-top-inner svg {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
 /* Header */
 .site-header {
   position: sticky;
