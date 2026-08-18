@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EveMed AI — анонимный ИИ-гинеколог и ИИ-маммолог в Telegram</title>
+  <meta name="description" content="EveMed AI — анонимный ИИ-консультант по женскому здоровью: ИИ-гинеколог, ИИ-маммолог и интимная дерматология. Визуальный скрининг по фото и текстовые консультации в Telegram без публикации личных данных.">
+  <meta name="keywords" content="EveMed AI, ИИ гинеколог, ИИ маммолог, анонимный гинеколог, онлайн консультация гинеколога, ИИ консультант по женскому здоровью, визуальный скрининг, телеграм бот гинеколог, самообследование груди, интимная дерматология, женское здоровье онлайн">
+  <meta name="author" content="EveMed AI">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#9B2D8E">
+  <meta name="geo.region" content="RU">
+  <meta name="geo.placename" content="Russia">
+  <meta name="language" content="Russian">
+  <link rel="canonical" href="https://evemed.fitness-ai.ru/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="EveMed AI">
+  <meta property="og:url" content="https://evemed.fitness-ai.ru/">
+  <meta property="og:title" content="EveMed AI — анонимный ИИ-гинеколог и ИИ-маммолог">
+  <meta property="og:description" content="Анонимный ИИ-консультант по женскому здоровью в Telegram: визуальный скрининг и бережные консультации по гинекологии, маммологии и интимной дерматологии.">
+  <meta property="og:image" content="https://evemed.fitness-ai.ru/images/logo.png">
+  <meta property="og:image:alt" content="Логотип EveMed AI — ИИ-консультант по женскому здоровью">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EveMed AI — анонимный ИИ-гинеколог и ИИ-маммолог">
+  <meta name="twitter:description" content="Визуальный скрининг и анонимные консультации по женскому здоровью в Telegram.">
+  <meta name="twitter:image" content="https://evemed.fitness-ai.ru/images/logo.png">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="/favicon-256x256.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://mc.yandex.ru">
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111509515', 'ym');
+
+    ym(111509515, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/111509515" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://evemed.fitness-ai.ru/#organization",
+        "name": "EveMed AI",
+        "url": "https://evemed.fitness-ai.ru/",
+        "logo": "https://evemed.fitness-ai.ru/images/logo.png",
+        "description": "Анонимный ИИ-консультант по женскому здоровью: ИИ-гинеколог, ИИ-маммолог и интимная дерматология в Telegram.",
+        "areaServed": "RU",
+        "inLanguage": "ru"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://evemed.fitness-ai.ru/#website",
+        "url": "https://evemed.fitness-ai.ru/",
+        "name": "EveMed AI",
+        "publisher": { "@id": "https://evemed.fitness-ai.ru/#organization" },
+        "inLanguage": "ru-RU"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://evemed.fitness-ai.ru/#app",
+        "name": "EveMed AI",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Telegram",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "RUB"
+        },
+        "description": "Telegram-бот для анонимного визуального скрининга и консультаций по женскому здоровью: гинекология, маммология, интимная дерматология.",
+        "url": "https://t.me/EveMedAI_bot",
+        "image": "https://evemed.fitness-ai.ru/images/girl.png",
+        "inLanguage": "ru"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://evemed.fitness-ai.ru/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Что такое EveMed AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EveMed AI — анонимный ИИ-консультант по женскому здоровью в Telegram. Это ИИ-гинеколог и ИИ-маммолог с поддержкой интимной дерматологии: визуальный скрининг по фото и текстовые консультации."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Заменяет ли ИИ-гинеколог очный приём врача?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нет. EveMed AI даёт вспомогательный визуальный и информационный разбор. Он не заменяет очный приём гинеколога или маммолога, УЗИ, маммографию, анализы и лабораторную диагностику."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Насколько анонимна онлайн консультация гинеколога в EveMed AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Фото обрабатываются во временной оперативной памяти, без публичной публикации персональных данных. Сервис создан для деликатных вопросов женского здоровья, когда важна конфиденциальность."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Какие темы закрывает визуальный скрининг?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Гинекология (наружные интимные зоны, слизистые, гигиена), маммология (симметрия, контуры, самообследование груди) и интимная дерматология (родинки по ABCDE, растяжки, раздражения после эпиляции)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-lockup" href="/" aria-label="EveMed AI — на главную">
+        <img src="/android-chrome-192x192.png" width="40" height="40" alt="">
+        <span class="brand-name">EveMed AI</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#how">Как работает</a>
+        <a href="#directions">Направления</a>
+        <a href="#privacy">Анонимность</a>
+        <a href="#faq">Вопросы</a>
+        <a class="btn btn-primary" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Открыть в Telegram</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="container mobile-nav" id="mobile-nav">
+      <a href="#how">Как работает</a>
+      <a href="#directions">Направления</a>
+      <a href="#privacy">Анонимность</a>
+      <a href="#faq">Вопросы</a>
+      <a class="btn btn-primary" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Открыть в Telegram</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <img class="hero-brand" src="/images/logo.png" width="220" height="220" alt="EveMed AI — ваш ИИ-консультант по женскому здоровью">
+          <h1>Анонимный ИИ-гинеколог и ИИ-маммолог — рядом, когда нужна ясность</h1>
+          <p class="hero-lead">Бережный ИИ-консультант по женскому здоровью: визуальный скрининг по фото и ответы в Telegram без лишнего стресса.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Начать консультацию</a>
+            <a class="btn btn-ghost btn-lg" href="#how">Как это устроено</a>
+          </div>
+          <p class="hero-note">Вспомогательный разбор, не замена очного врача. Подходит для первого ориентира по симптомам и фото.</p>
+        </div>
+        <div class="hero-visual">
+          <img src="/images/girl.png" width="500" height="620" alt="Персонаж EveMed AI — цифровой консультант по женскому здоровью с планшетом" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Простой старт</p>
+          <h2 id="how-title">Онлайн консультация гинеколога с ИИ — за три шага</h2>
+          <p class="section-lead">Телеграм-бот гинеколог EveMed AI принимает фото и текст, держит контекст диалога и отвечает спокойно, по делу.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <h3>Откройте бота</h3>
+            <p>Запустите EveMed AI в Telegram — без регистрации на сайте и без очередей.</p>
+          </article>
+          <article class="step">
+            <h3>Опишите или пришлите фото</h3>
+            <p>Задайте вопрос или загрузите снимок для визуального скрининга в нужном направлении.</p>
+          </article>
+          <article class="step">
+            <h3>Получите разбор</h3>
+            <p>ИИ-консультант по женскому здоровью даст аккуратные наблюдения, red flags и понятные рекомендации.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="directions" aria-labelledby="dir-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Специализации</p>
+          <h2 id="dir-title">Три направления женского здоровья онлайн</h2>
+          <p class="section-lead">Один сервис закрывает самые частые деликатные запросы: от гигиены и сыпи до самообследования груди.</p>
+        </div>
+        <div class="directions">
+          <article class="direction">
+            <h3>ИИ-гинеколог</h3>
+            <p>Первичный взгляд на наружные интимные зоны, слизистые, гиперемию, сыпь и послеродовые области.</p>
+            <ul>
+              <li>Оценка раздражения и гигиены</li>
+              <li>Подсказки по уходу с учётом pH</li>
+              <li>Сигналы, когда нужен очный гинеколог</li>
+            </ul>
+          </article>
+          <article class="direction">
+            <h3>ИИ-маммолог</h3>
+            <p>Визуальная оценка симметрии, контуров молочных желез, сосков и ареол без панического тона.</p>
+            <ul>
+              <li>Контроль видимых изменений</li>
+              <li>График самообследования груди</li>
+              <li>Напоминание о визите к маммологу</li>
+            </ul>
+          </article>
+          <article class="direction">
+            <h3>Интимная дерматология</h3>
+            <p>Разбор родинок по шкале ABCDE, растяжек и фолликулита после эпиляции.</p>
+            <ul>
+              <li>Наблюдение динамики образований</li>
+              <li>Уход при раздражении кожи</li>
+              <li>Когда обратиться к дерматологу</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Доверие</p>
+          <h2 id="privacy-title">Анонимный гинеколог, который бережёт ваше спокойствие</h2>
+          <p class="section-lead">Деликатные темы требуют приватности. EveMed AI спроектирован так, чтобы вы могли спросить то, о чём сложно говорить вслух.</p>
+        </div>
+        <div class="trust-grid">
+          <article class="trust-item">
+            <div class="trust-icon" aria-hidden="true">◇</div>
+            <div>
+              <h3>Без публичной публикации данных</h3>
+              <p>Анонимный гинеколог и ИИ-маммолог не выкладывают ваши фото и переписку в открытый доступ.</p>
+            </div>
+          </article>
+          <article class="trust-item">
+            <div class="trust-icon" aria-hidden="true">◎</div>
+            <div>
+              <h3>Фото во временной памяти</h3>
+              <p>Изображения для визуального скрининга обрабатываются в оперативной памяти сессии.</p>
+            </div>
+          </article>
+          <article class="trust-item">
+            <div class="trust-icon" aria-hidden="true">✦</div>
+            <div>
+              <h3>Эмпатичный тон</h3>
+              <p>Профессиональный язык без запугивания — поддержка там, где важны ясность и уважение.</p>
+            </div>
+          </article>
+          <article class="trust-item">
+            <div class="trust-icon" aria-hidden="true">▹</div>
+            <div>
+              <h3>Память диалога</h3>
+              <p>Контекст предыдущих вопросов и разборов подгружается, чтобы не начинать всё заново.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Частые вопросы об ИИ-консультанте по женскому здоровью</h2>
+          <p class="section-lead">Короткие ответы для поиска и ассистентов: что умеет EveMed AI и где его границы.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Что такое EveMed AI?</summary>
+            <p>EveMed AI — анонимный ИИ-консультант по женскому здоровью в Telegram. Сервис совмещает роли ИИ-гинеколога и ИИ-маммолога, а также помогает с вопросами интимной дерматологии через визуальный скрининг и текст.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Заменяет ли ИИ-гинеколог очный приём?</summary>
+            <p>Нет. Это вспомогательный информационный и визуальный разбор. Онлайн консультация гинеколога с ИИ не отменяет очный осмотр, УЗИ, маммографию, мазки и другие исследования.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как проходит визуальный скрининг?</summary>
+            <p>Вы выбираете направление, присылаете фото и при необходимости комментарий. Бот анализирует изображение и отвечает с учётом red flags — когда лучше ускорить визит к врачу.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Поможет ли сервис с самообследованием груди?</summary>
+            <p>Да. ИИ-маммолог напоминает правила и календарный график самообследования груди, помогает сориентироваться по визуальным признакам и подсказывает, когда самообследование груди стоит дополнить очным визитом к маммологу.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Кому подходит телеграм-бот гинеколог EveMed AI?</summary>
+            <p>Тем, кому нужен спокойный первый ориентир по женскому здоровью онлайн: симптомы, гигиена, изменения кожи, вопросы перед визитом к специалисту — в анонимном формате.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2 id="cta-title">Готовы получить бережный ответ без очереди?</h2>
+            <p>Откройте EveMed AI в Telegram и задайте вопрос ИИ-гинекологу или ИИ-маммологу прямо сейчас.</p>
+          </div>
+          <a class="btn btn-primary btn-lg" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Перейти в Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="/android-chrome-192x192.png" width="36" height="36" alt="">
+          <strong>EveMed AI</strong>
+        </div>
+        <p class="disclaimer">
+          <span class="sr-only">Медицинский дисклеймер.</span>
+          EveMed AI предоставляет вспомогательный ИИ-анализ и не заменяет очную консультацию врача, инструментальную и лабораторную диагностику. При тревожных симптомах обратитесь к гинекологу, маммологу или в неотложную помощь.
+        </p>
+      </div>
+      <div class="footer-meta">
+        <span>Домен: <a href="https://evemed.fitness-ai.ru/">evemed.fitness-ai.ru</a></span>
+        <a href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Telegram-бот EveMed AI</a>
+        <span>© <span id="year">2026</span> EveMed AI</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

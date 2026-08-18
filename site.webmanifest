@@ -1,0 +1,22 @@
+{
+  "name": "EveMed AI — ИИ-консультант по женскому здоровью",
+  "short_name": "EveMed AI",
+  "description": "Анонимный ИИ-гинеколог и ИИ-маммолог в Telegram: визуальный скрининг и консультации по женскому здоровью.",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#9B2D8E",
+  "background_color": "#FBF7FA",
+  "display": "standalone",
+  "lang": "ru"
+}
