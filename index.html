@@ -8,7 +8,7 @@
   <meta name="keywords" content="EveMed AI, ИИ гинеколог, ИИ маммолог, анонимный гинеколог, онлайн консультация гинеколога, ИИ консультант по женскому здоровью, визуальный скрининг, телеграм бот гинеколог, самообследование груди, интимная дерматология, женское здоровье онлайн">
   <meta name="author" content="EveMed AI">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <meta name="theme-color" content="#9B2D8E">
+  <meta name="theme-color" content="#9c2885">
   <meta name="geo.region" content="RU">
   <meta name="geo.placename" content="Russia">
   <meta name="language" content="Russian">
@@ -39,9 +39,10 @@
   <link rel="apple-touch-icon" sizes="192x192" href="/android-chrome-192x192.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Google Fonts: Outfit (modern display) & Plus Jakarta Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="preconnect" href="https://mc.yandex.ru">
 
@@ -145,15 +146,19 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand-lockup" href="/" aria-label="EveMed AI — на главную">
-        <img src="/android-chrome-192x192.png" width="40" height="40" alt="">
+        <img class="brand-icon" src="/android-chrome-192x192.png" width="38" height="38" alt="EveMed AI">
         <span class="brand-name">EveMed AI</span>
       </a>
       <nav class="nav" aria-label="Основная навигация">
         <a href="#how">Как работает</a>
         <a href="#directions">Направления</a>
+        <a href="#demo">Демо разбора</a>
         <a href="#privacy">Анонимность</a>
         <a href="#faq">Вопросы</a>
-        <a class="btn btn-primary" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Открыть в Telegram</a>
+        <a class="btn btn-primary" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8-3.45 3.82-1.6 4.62-1.87 5.14-1.88.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.16-.03.28z"/></svg>
+          Открыть в Telegram
+        </a>
       </nav>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню">
         <span aria-hidden="true"></span>
@@ -162,174 +167,330 @@
     <div class="container mobile-nav" id="mobile-nav">
       <a href="#how">Как работает</a>
       <a href="#directions">Направления</a>
+      <a href="#demo">Демо разбора</a>
       <a href="#privacy">Анонимность</a>
       <a href="#faq">Вопросы</a>
-      <a class="btn btn-primary" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Открыть в Telegram</a>
+      <a class="btn btn-primary" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8-3.45 3.82-1.6 4.62-1.87 5.14-1.88.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.16-.03.28z"/></svg>
+        Открыть в Telegram
+      </a>
     </div>
   </header>
 
   <main id="main">
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <img class="hero-brand" src="/images/logo.png" width="220" height="220" alt="EveMed AI — ваш ИИ-консультант по женскому здоровью">
-          <h1>Анонимный ИИ-гинеколог и ИИ-маммолог — рядом, когда нужна ясность</h1>
-          <p class="hero-lead">Бережный ИИ-консультант по женскому здоровью: визуальный скрининг по фото и ответы в Telegram без лишнего стресса.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Начать консультацию</a>
-            <a class="btn btn-ghost btn-lg" href="#how">Как это устроено</a>
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            100% Анонимно • Без записи в клинику • Ответ за 10 сек
           </div>
-          <p class="hero-note">Вспомогательный разбор, не замена очного врача. Подходит для первого ориентира по симптомам и фото.</p>
+          <h1>ИИ-гинеколог и маммолог — <span class="text-gradient">бережная ясность</span> рядом</h1>
+          <p class="hero-lead">Деликатный цифровой консультант по женскому здоровью: мгновенный визуальный скрининг по фото и поддержка в Telegram без неловкости и стресса.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8-3.45 3.82-1.6 4.62-1.87 5.14-1.88.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.16-.03.28z"/></svg>
+              Начать консультацию
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#demo">Посмотреть пример</a>
+          </div>
+          <div class="hero-features">
+            <div class="hero-feat-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Конфиденциально
+            </div>
+            <div class="hero-feat-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Круглосуточно 24/7
+            </div>
+            <div class="hero-feat-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Без сохранения в базу
+            </div>
+          </div>
         </div>
-        <div class="hero-visual">
-          <img src="/images/girl.png" width="500" height="620" alt="Персонаж EveMed AI — цифровой консультант по женскому здоровью с планшетом" fetchpriority="high">
+
+        <div class="hero-visual-stage">
+          <div class="hero-visual-glow"></div>
+          <div class="hero-image-wrapper">
+            <img class="hero-character-img" src="/images/girl.png" width="480" height="595" alt="EveMed AI цифровой консультант" fetchpriority="high">
+            
+            <!-- Floating Badge Top -->
+            <div class="floating-glass-card card-top">
+              <div class="card-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="card-badge-content">
+                <div class="card-badge-title">Временная память</div>
+                <div class="card-badge-desc">Фото стираются из памяти</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom -->
+            <div class="floating-glass-card card-bottom">
+              <div class="card-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <div class="card-badge-content">
+                <div class="card-badge-title">Визуальный скрининг</div>
+                <div class="card-badge-desc">Гинекология & Маммология</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Steps Section -->
     <section class="section" id="how" aria-labelledby="how-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Простой старт</p>
-          <h2 id="how-title">Онлайн консультация гинеколога с ИИ — за три шага</h2>
-          <p class="section-lead">Телеграм-бот гинеколог EveMed AI принимает фото и текст, держит контекст диалога и отвечает спокойно, по делу.</p>
+          <span class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Простой старт
+          </span>
+          <h2 id="how-title">Консультация с ИИ — всего за 3 простых шага</h2>
+          <p class="section-lead">Бот EveMed AI принимает фото или текстовые вопросы, аккуратно помнит контекст и отвечает спокойно и научно.</p>
         </div>
         <div class="steps">
-          <article class="step">
-            <h3>Откройте бота</h3>
-            <p>Запустите EveMed AI в Telegram — без регистрации на сайте и без очередей.</p>
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <h3>Запустите бота</h3>
+            <p>Откройте EveMed AI в Telegram по одной кнопке. Никаких анкет, паспортных данных и очередей.</p>
           </article>
-          <article class="step">
-            <h3>Опишите или пришлите фото</h3>
-            <p>Задайте вопрос или загрузите снимок для визуального скрининга в нужном направлении.</p>
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <h3>Задайте вопрос или фото</h3>
+            <p>Опишите симптомы текстом или прикрепите снимок для визуального анализа нужной интимной зоны.</p>
           </article>
-          <article class="step">
+          <article class="step-card">
+            <div class="step-number">03</div>
             <h3>Получите разбор</h3>
-            <p>ИИ-консультант по женскому здоровью даст аккуратные наблюдения, red flags и понятные рекомендации.</p>
+            <p>ИИ выдаст бережное заключение: наблюдения, оценку физиологической нормы, советы по уходу и red flags.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- Specializations Section -->
     <section class="section" id="directions" aria-labelledby="dir-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Специализации</p>
-          <h2 id="dir-title">Три направления женского здоровья онлайн</h2>
-          <p class="section-lead">Один сервис закрывает самые частые деликатные запросы: от гигиены и сыпи до самообследования груди.</p>
+          <span class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            Специализации
+          </span>
+          <h2 id="dir-title">Три направления деликатной заботы</h2>
+          <p class="section-lead">ИИ обучен на медицинских стандартах и протоколах бережного визуального скрининга.</p>
         </div>
         <div class="directions">
-          <article class="direction">
-            <h3>ИИ-гинеколог</h3>
-            <p>Первичный взгляд на наружные интимные зоны, слизистые, гиперемию, сыпь и послеродовые области.</p>
-            <ul>
-              <li>Оценка раздражения и гигиены</li>
-              <li>Подсказки по уходу с учётом pH</li>
-              <li>Сигналы, когда нужен очный гинеколог</li>
+          <article class="direction-card">
+            <div class="dir-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-10 10c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </div>
+            <h3>🌸 ИИ-гинеколог</h3>
+            <p>Оценка состояния наружных интимных зон, слизистых, гиперемии, раздражений, микротрещин и послеродовых швов.</p>
+            <ul class="dir-checklist">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Рекомендации по pH-балансу и гигиене</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Анализ последствий депиляции и белья</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Выявление симптомов для очного визита</li>
             </ul>
           </article>
-          <article class="direction">
-            <h3>ИИ-маммолог</h3>
-            <p>Визуальная оценка симметрии, контуров молочных желез, сосков и ареол без панического тона.</p>
-            <ul>
-              <li>Контроль видимых изменений</li>
-              <li>График самообследования груди</li>
-              <li>Напоминание о визите к маммологу</li>
+
+          <article class="direction-card">
+            <div class="dir-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>🎀 ИИ-маммолог</h3>
+            <p>Визуальный скрининг симметрии молочных желез, формы, контуров кожи, состояния ареол и сосков.</p>
+            <ul class="dir-checklist">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Индивидуальный график самообследования</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Оценка трещин при лактации и уход</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Своевременные сигналы для УЗИ и врача</li>
             </ul>
           </article>
-          <article class="direction">
-            <h3>Интимная дерматология</h3>
-            <p>Разбор родинок по шкале ABCDE, растяжек и фолликулита после эпиляции.</p>
-            <ul>
-              <li>Наблюдение динамики образований</li>
-              <li>Уход при раздражении кожи</li>
-              <li>Когда обратиться к дерматологу</li>
+
+          <article class="direction-card">
+            <div class="dir-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>🔍 Интимная дерматология</h3>
+            <p>Клинический скрининг родинок и невусов по правилу ABCDE, растяжек, пигментации и фолликулита.</p>
+            <ul class="dir-checklist">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Оценка симметрии и границ образований</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Уход при раздражениях от трения</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Контроль динамики пигментации</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section trust" id="privacy" aria-labelledby="privacy-title">
+    <!-- Interactive Live Demo Section -->
+    <section class="section demo-section" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Пример работы
+          </span>
+          <h2 id="demo-title">Как выглядит диалог с EveMed AI</h2>
+          <p class="section-lead">Чёткая медицинская структура, деликатный тон и отсутствие пугающих терминов.</p>
+        </div>
+
+        <div class="chat-mockup-wrapper">
+          <div class="chat-mockup-header">
+            <div class="chat-bot-info">
+              <img class="chat-bot-avatar" src="/android-chrome-192x192.png" width="40" height="40" alt="EveMed Bot">
+              <div>
+                <div class="chat-bot-title">EveMed AI • Женское здоровье</div>
+                <div class="chat-bot-status"><span class="badge-dot"></span> бот в сети</div>
+              </div>
+            </div>
+            <a class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.86rem;" href="https://t.me/EveMedAI_bot" target="_blank" rel="noopener">Открыть</a>
+          </div>
+
+          <div class="chat-mockup-body">
+            <div class="chat-bubble user">
+              🌸 Привет! Появилось небольшое покраснение после бритья в интимной зоне, чуть покалывает. Насколько это критично?
+            </div>
+
+            <div class="chat-bubble bot">
+              <span class="bot-tag">🌸 Гинекология & Дерматология</span>
+              
+              <div class="chat-structured-title">🔍 Визуальные наблюдения:</div>
+              Описанные признаки характерны для поверхностного раздражения волосяных фолликулов (постдепиляционный дерматит/фолликулит). Ткани сохраняют физиологическую целостность, признаков глубокого воспаления нет.
+
+              <div class="chat-structured-title">💡 Бережные рекомендации:</div>
+              • Исключите трение тесным синтетическим бельем на 2–3 дня.<br>
+              • Используйте успокаивающие средства с пантенолом или цинком.<br>
+              • Для интимной гигиены применяйте мягкие гели с pH 4.5–5.2.
+
+              <div class="chat-structured-title">🏥 Когда обратиться к врачу:</div>
+              Если появится отек, локальное повышение температуры или уплотнение — рекомендую очный осмотр гинеколога или дерматолога.
+            </div>
+          </div>
+
+          <div class="chat-mockup-footer">
+            <span class="chat-input-placeholder">Напишите вопрос или отправьте фото...</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--brand)" style="opacity: 0.7;"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust & Privacy Section -->
+    <section class="section" id="privacy" aria-labelledby="privacy-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Доверие</p>
-          <h2 id="privacy-title">Анонимный гинеколог, который бережёт ваше спокойствие</h2>
-          <p class="section-lead">Деликатные темы требуют приватности. EveMed AI спроектирован так, чтобы вы могли спросить то, о чём сложно говорить вслух.</p>
+          <span class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Абсолютная приватность
+          </span>
+          <h2 id="privacy-title">Анонимность, которой можно доверять</h2>
+          <p class="section-lead">Мы понимаем, насколько важна конфиденциальность в вопросах женского здоровья.</p>
         </div>
         <div class="trust-grid">
           <article class="trust-item">
-            <div class="trust-icon" aria-hidden="true">◇</div>
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </div>
             <div>
-              <h3>Без публичной публикации данных</h3>
-              <p>Анонимный гинеколог и ИИ-маммолог не выкладывают ваши фото и переписку в открытый доступ.</p>
+              <h3>Без публикации и привязки к личности</h3>
+              <p>Ваши снимки и диалоги никогда не публикуются и не передаются третьим лицам.</p>
             </div>
           </article>
+
           <article class="trust-item">
-            <div class="trust-icon" aria-hidden="true">◎</div>
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
             <div>
-              <h3>Фото во временной памяти</h3>
-              <p>Изображения для визуального скрининга обрабатываются в оперативной памяти сессии.</p>
+              <h3>Временная память сессии</h3>
+              <p>Изображения для визуального анализа обрабатываются в оперативной памяти и не хранятся на публичных дисках.</p>
             </div>
           </article>
+
           <article class="trust-item">
-            <div class="trust-icon" aria-hidden="true">✦</div>
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
             <div>
-              <h3>Эмпатичный тон</h3>
-              <p>Профессиональный язык без запугивания — поддержка там, где важны ясность и уважение.</p>
+              <h3>Эмпатичный и бережный язык</h3>
+              <p>ИИ формулирует ответы доступно и спокойно, избегая запугивающих терминов и паники.</p>
             </div>
           </article>
+
           <article class="trust-item">
-            <div class="trust-icon" aria-hidden="true">▹</div>
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            </div>
             <div>
-              <h3>Память диалога</h3>
-              <p>Контекст предыдущих вопросов и разборов подгружается, чтобы не начинать всё заново.</p>
+              <h3>Умная память контекста</h3>
+              <p>Бот помнит историю предыдущих обращений и динамику, чтобы не переспрашивать вас повторно.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- FAQ Section -->
     <section class="section" id="faq" aria-labelledby="faq-title">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">FAQ</p>
-          <h2 id="faq-title">Частые вопросы об ИИ-консультанте по женскому здоровью</h2>
-          <p class="section-lead">Короткие ответы для поиска и ассистентов: что умеет EveMed AI и где его границы.</p>
+        <div class="section-head center">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Часто задаваемые вопросы</h2>
+          <p class="section-lead">Всё, что важно знать о возможностях и границах ИИ-консультанта.</p>
         </div>
         <div class="faq-list">
-          <details class="faq-item">
-            <summary>Что такое EveMed AI?</summary>
-            <p>EveMed AI — анонимный ИИ-консультант по женскому здоровью в Telegram. Сервис совмещает роли ИИ-гинеколога и ИИ-маммолога, а также помогает с вопросами интимной дерматологии через визуальный скрининг и текст.</p>
+          <details class="faq-item" open>
+            <summary>
+              Что такое EveMed AI?
+              <span class="faq-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </summary>
+            <p>EveMed AI — это анонимный ИИ-консультант по женскому здоровью в Telegram. Сервис совмещает функции ИИ-гинеколога, ИИ-маммолога и интимного дерматолога: проводит первичный визуальный скрининг по фото и отвечает на деликатные вопросы.</p>
           </details>
+
           <details class="faq-item">
-            <summary>Заменяет ли ИИ-гинеколог очный приём?</summary>
-            <p>Нет. Это вспомогательный информационный и визуальный разбор. Онлайн консультация гинеколога с ИИ не отменяет очный осмотр, УЗИ, маммографию, мазки и другие исследования.</p>
+            <summary>
+              Заменяет ли бот очный приём врача?
+              <span class="faq-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </summary>
+            <p>Нет. Бот даёт ориентировочный вспомогательный визуальный и информационный разбор. Он не ставит клинических диагнозов и не отменяет очный визит к врачу, УЗИ, маммографию и анализы.</p>
           </details>
+
           <details class="faq-item">
-            <summary>Как проходит визуальный скрининг?</summary>
-            <p>Вы выбираете направление, присылаете фото и при необходимости комментарий. Бот анализирует изображение и отвечает с учётом red flags — когда лучше ускорить визит к врачу.</p>
+            <summary>
+              Насколько безопасна передача фото?
+              <span class="faq-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </summary>
+            <p>Фотографии анализируются в изолированной оперативной памяти нейросети и не публикуются в открытом доступе. Сервис создан с упором на максимальную конфиденциальность.</p>
           </details>
+
           <details class="faq-item">
-            <summary>Поможет ли сервис с самообследованием груди?</summary>
-            <p>Да. ИИ-маммолог напоминает правила и календарный график самообследования груди, помогает сориентироваться по визуальным признакам и подсказывает, когда самообследование груди стоит дополнить очным визитом к маммологу.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Кому подходит телеграм-бот гинеколог EveMed AI?</summary>
-            <p>Тем, кому нужен спокойный первый ориентир по женскому здоровью онлайн: симптомы, гигиена, изменения кожи, вопросы перед визитом к специалисту — в анонимном формате.</p>
+            <summary>
+              Как бот помогает с самообследованием груди?
+              <span class="faq-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </summary>
+            <p>ИИ-маммолог напоминает правильную технику и оптимальные дни менструального цикла (5–12 день) для самообследования, помогает распознать тревожные визуальные маркеры и вовремя направит к онкомаммологу при необходимости.</p>
           </details>
         </div>
       </div>
     </section>
 
+    <!-- CTA Band -->
     <section class="cta-band" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta-panel">
           <div>
-            <h2 id="cta-title">Готовы получить бережный ответ без очереди?</h2>
-            <p>Откройте EveMed AI в Telegram и задайте вопрос ИИ-гинекологу или ИИ-маммологу прямо сейчас.</p>
+            <h2 id="cta-title">Получите бережный совет прямо сейчас</h2>
+            <p>Откройте EveMed AI в Telegram — без очередей, неловких пауз и сложных записей к врачу.</p>
           </div>
-          <a class="btn btn-primary btn-lg" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Перейти в Telegram</a>
+          <a class="btn btn-primary btn-lg" href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8-3.45 3.82-1.6 4.62-1.87 5.14-1.88.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.16-.03.28z"/></svg>
+            Открыть EveMed AI
+          </a>
         </div>
       </div>
     </section>
@@ -339,18 +500,18 @@
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="/android-chrome-192x192.png" width="36" height="36" alt="">
+          <img src="/android-chrome-192x192.png" width="36" height="36" alt="EveMed AI">
           <strong>EveMed AI</strong>
         </div>
         <p class="disclaimer">
           <span class="sr-only">Медицинский дисклеймер.</span>
-          EveMed AI предоставляет вспомогательный ИИ-анализ и не заменяет очную консультацию врача, инструментальную и лабораторную диагностику. При тревожных симптомах обратитесь к гинекологу, маммологу или в неотложную помощь.
+          EveMed AI предоставляет вспомогательный визуальный ИИ-анализ и не заменяет очную консультацию врача, инструментальную диагностику (УЗИ, маммографию) и лабораторные анализы. При острых болях и тревожных симптомах немедленно обратитесь к врачу.
         </p>
       </div>
       <div class="footer-meta">
-        <span>Домен: <a href="https://evemed.fitness-ai.ru/">evemed.fitness-ai.ru</a></span>
-        <a href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Telegram-бот EveMed AI</a>
-        <span>© <span id="year">2026</span> EveMed AI</span>
+        <span>Сайт: <a href="https://evemed.fitness-ai.ru/">evemed.fitness-ai.ru</a></span>
+        <a href="https://t.me/EveMedAI_bot" rel="noopener noreferrer" target="_blank">Telegram-бот: @EveMedAI_bot</a>
+        <span>© <span id="year">2026</span> EveMed AI • Все права защищены</span>
       </div>
     </div>
   </footer>
