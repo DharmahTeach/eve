@@ -1,0 +1,11 @@
+# EveMed AI
+
+Информационный ИИ-ассистент по женскому здоровью в Telegram. Не медицинское изделие, не ставит диагнозы, не заменяет очный приём врача.
+
+- Бот: https://t.me/EveMedAI_bot
+- Сайт: https://evemed.fitness-ai.ru/
+
+## Страницы
+- Главная: https://evemed.fitness-ai.ru/
+- Конфиденциальность: https://evemed.fitness-ai.ru/privacy.html
+- Условия: https://evemed.fitness-ai.ru/terms.html
